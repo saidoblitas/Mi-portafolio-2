@@ -1,0 +1,122 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  animation: slideUp 1.5s ease-out forwards;
+  /* Para usar una imagen con fondo blanco y hacer que sea "invisible" */
+img {
+  background-color: transparent; /* Hace que el fondo sea transparente (si es blanco o de un color sólido) */
+  filter: brightness(0) invert(1); /* Cambia colores, puedes ajustar para que se vea correctamente */
+}
+
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -30%);
+  }
+}
+
+.text-designers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  z-index: 1;
+}
+
+.designer {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+.designer-description {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.8;
+  max-width: 400px;
+  text-align: center;
+  margin: 0;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-designers {
+  animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+.text-coder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  z-index: 1;
+}
+
+.coder {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.coder-description {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.8;
+  max-width: 400px;
+  text-align: center;
+  margin: 0;
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.text-coder {
+  animation: slideFromRight 1.5s ease-out forwards;
+}

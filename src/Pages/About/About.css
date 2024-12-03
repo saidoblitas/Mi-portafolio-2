@@ -1,0 +1,61 @@
+/* Fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Proxima+Nova&display=swap");
+
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sección 1 */
+.section {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para la sección de introducción */
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left;
+}
+
+.intro-title {
+  font-family: "Anton", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.intro-description {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.intro-image {
+  flex: 5;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la galería de imágenes */
